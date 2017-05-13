@@ -22,8 +22,27 @@ import time
 
 
 
+
+
+#The alive systems addressess will store is in this file
+result=open("/root/Desktop/ipaddress.txt" , 'w+') #create a writeable file
+result2=open("/root/Desktop/macaddress.txt" , 'w+') #create a writeable file 
+
+alivesys=[] #It is a list variable that we will use to store the alive systems IP address in the network
+sysmac=[]   #It is a list variable that we will use to store the MAC address of the Alive systems in network
+
+
+
 	
 	
+	
+
+
+
+
+
+
+
 
 
 
