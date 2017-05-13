@@ -31,7 +31,7 @@ result2=open("/root/Desktop/macaddress.txt" , 'w+') #create a writeable file
 #It is a list variable that we will use to store the alive systems IP address in the network after checksys function
 alivesys=[] 
 
-#It is a list variable that we will use to store the MAC address of the Alive systems in network after checksys function
+#It is a list variable that we will use to store the MAC address of the Alive systems in network after check systems MAC operation
 sysmac=[]   
 
 
