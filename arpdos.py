@@ -23,6 +23,27 @@ import time
 
 
 
+#Create a class for poisening operation
+class poisenthreads(threading.Thread): 
+	
+	#overide the __init__ arguments with our arguments
+	def __init__(self , vicmacadd , sysmac , alivesys ,j): 
+		threading.Thread.__init__(self)
+		self.vicmacadd=vicmacadd
+		self.sysmac=sysmac
+		self.alivesys=alivesys
+		self.j=j
+
+	#Define a function that we will use it to tell the new thread what to do
+	def run(self):
+
+		#It is a function that we will tell the threads to go on it for poisening
+		poisenop(self.vicmacadd , self.sysmac , self.alivesys , self.j)
+
+
+
+
+
 
 #The alive systems addressess will store is in this file
 result=open("/root/Desktop/ipaddress.txt" , 'w+') #create a writeable file
